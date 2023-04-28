@@ -1,0 +1,13 @@
+python
+import os
+
+DATA_DIR = "cloud-based-data-processing/data"
+RAW_DATA_FILE = "raw_data.csv"
+
+# Create directory if it doesn't exist
+if not os.path.exists(DATA_DIR):
+    os.makedirs(DATA_DIR)
+
+# Create empty raw_data.csv file
+with open(os.path.join(DATA_DIR, RAW_DATA_FILE), 'w'):
+    pass
